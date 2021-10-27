@@ -321,6 +321,9 @@ section#catalog .categories li{
 section#catalog .categories li:first-of-type{
     margin: 0;
 }
+section#catalog .catalog-container{
+    display: none;
+}
 section#catalog .catalog-container .c-card{
     width: 320px;
     border:solid 1 px #e1e1e1;
@@ -385,7 +388,7 @@ footer{
     width: 100%;
     position: absolute;
     z-index: 100;
-    top: calc(100% -15vh);
+    top: calc(100% - 15vh);
     left: 0;
 }
 footer .nav{
@@ -402,6 +405,9 @@ footer .nav li{
     display: flex;
     flex-direction: column;
 }
+footer .nav li:first-of-type{
+    padding-left: 0;
+}
 footer .nav li::after{
     content: "";
     height: 3px;
@@ -415,11 +421,14 @@ footer .nav li:hover::after{
 footer .footer-logo img{
     width: 250px;
 }
+footer .contact > .item p{
+    font-size: 12px;
+}
 footer .contact > .item img{
     width: 25px;
     margin-right: 15px;
 }
-footer social-icons img{
+footer .social-icons img{
     width: 35px;
     cursor: pointer;
 }
